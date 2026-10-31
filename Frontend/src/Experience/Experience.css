@@ -1,0 +1,115 @@
+.experience-section {
+    padding: 96px 24px;
+    background-color: #0f172a;
+    border-top: 1px solid #1e293b;
+}
+
+.experience-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.experience-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .experience-layout {
+        flex-direction: row;
+        gap: 48px;
+    }
+}
+
+.tab-list {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 1px solid #334155;
+}
+
+@media (min-width: 768px) {
+    .tab-list {
+        flex-direction: column;
+        border-bottom: none;
+        border-left: 2px solid #334155;
+        flex-shrink: 0;
+    }
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: rgba(30, 41, 59, 0.4);
+    color: #f1f5f9;
+}
+
+.tab-btn.active {
+    color: #38bdf8;
+    background-color: rgba(30, 41, 59, 0.7);
+    border-bottom: 2px solid #38bdf8;
+}
+
+@media (min-width: 768px) {
+    .tab-btn.active {
+        border-bottom: none;
+        border-left: 2px solid #38bdf8;
+        margin-left: -2px;
+    }
+}
+
+.tab-panel {
+    flex-grow: 1;
+}
+
+.job-role {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin: 0 0 4px 0;
+}
+
+.job-company {
+    color: #38bdf8;
+}
+
+.job-period {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0 0 20px 0;
+}
+
+.job-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.job-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.job-points .bullet {
+    color: #38bdf8;
+}
